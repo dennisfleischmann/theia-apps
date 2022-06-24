@@ -1,5 +1,5 @@
-ARG NODE_VERSION=12.22.12
-FROM node:${NODE_VERSION}-alpine
+ARG NODE_VERSION=18.4.0
+FROM node:${NODE_VERSION}-alpine3.15
 RUN apk add --no-cache make pkgconfig gcc g++ python3 libx11-dev libxkbfile-dev libsecret-dev
 ARG version=latest
 WORKDIR /home/theia
